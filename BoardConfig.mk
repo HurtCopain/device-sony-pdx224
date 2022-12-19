@@ -60,3 +60,5 @@ BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 52428800
 
 # Reserve space for data encryption (0x18E3B3F000-0x4000)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 106899419136
+
+-include vendor/sony/pdx224/proprietary/BoardConfigVendor.mk
