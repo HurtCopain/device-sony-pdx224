@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true 
+
 # Inherit from sony nagara
 include device/sony/nagara/BoardConfigCommon.mk
 

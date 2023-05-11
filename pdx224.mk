@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+#$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,6 +28,14 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 IS_PHONE := true
 TARGET_BUILD_WITH_LTO := true
 TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := true
+WITH_GMS := true
+CUSTOM_BUILD_TYPE := Official
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2520
@@ -35,7 +43,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device Identifiers
-PRODUCT_NAME := aosp_pdx224
+PRODUCT_NAME := pdx224
 PRODUCT_DEVICE := pdx224
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
