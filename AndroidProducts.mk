@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pdx224.mk
+    $(LOCAL_DIR)/colt_pdx224.mk
 
 COMMON_LUNCH_CHOICES := \
-    pdx224-user \
-    pdx224-userdebug \
-    pdx224-eng
+    colt_pdx224-user \
+    colt_pdx224-userdebug \
+    colt_pdx224-eng
